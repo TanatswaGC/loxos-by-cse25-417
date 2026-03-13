@@ -24,6 +24,26 @@
         <div class="hero-content">
             <h1>FORGE YOUR STRENGTH</h1>
             <p>Premium lifting gear designed for the modern athlete.</p>
+            <section id="calculator" class="calc-container">
+    <h2>1RM STRENGTH ESTIMATOR</h2>
+    <p>Calculate your theoretical max based on your heavy sets.</p>
+    
+    <div class="unit-toggle">
+        <button id="btnKg" onclick="setUnit('kg')">KG</button>
+        <button id="btnLb" onclick="setUnit('lb')">LB</button>
+    </div>
+
+    <div class="input-group">
+        <input type="number" id="liftWeight" placeholder="Weight (KG)">
+        <input type="number" id="liftReps" placeholder="Reps">
+    </div>
+
+    <button class="calc-main-btn" onclick="calculateStrength()">CALCULATE MAX</button>
+    
+    <div id="calcResult" class="result-display">
+        ESTIMATED 1RM: --
+    </div>
+</section>
             <a href="#shop" class="btn">View Collection</a>
         </div>
     </section>
