@@ -217,6 +217,23 @@ footer {
     align-items: center;
 }
 .unit-toggle button:focus {
+    .hero {
+    /* The background image and dark tint */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('loxos background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Change height from 100vh to auto and add padding */
+    height: auto; 
+    padding: 100px 20px; /* Adjusts how "thick" the section looks */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
     border-color: #FFFFFF;
     background-color: #333333;
 }
