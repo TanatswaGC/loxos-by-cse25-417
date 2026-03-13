@@ -198,6 +198,24 @@ footer {
     padding: 5px 15px;
     cursor: pointer;
 }
+/* Styling for the new LOXOS image logo */
+.nav-logo {
+    height: 45px;       /* Keeps the logo sleek in the nav bar */
+    width: auto;        /* Maintains the correct aspect ratio */
+    display: block;
+    padding: 5px 0;
+    transition: filter 0.3s ease;
+}
+
+.nav-logo:hover {
+    filter: brightness(1.2); /* Subtle glow when users hover */
+}
+
+/* Ensure the logo container doesn't have weird spacing */
+.logo a {
+    display: flex;
+    align-items: center;
+}
 .unit-toggle button:focus {
     border-color: #FFFFFF;
     background-color: #333333;
