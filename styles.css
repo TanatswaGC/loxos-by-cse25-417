@@ -50,35 +50,39 @@ nav ul li a:hover {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
-/* Hero Section */
+
+/*UPDATED HERO SECTION */
 .hero {
-    height: 90vh;
+
+    min-height: 85vh; 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    
+    justify-content: center; 
     text-align: center;
     background: #000000;
-    padding: 0 20px;
+    padding: 100px 20px 60px 20px; 
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 8vw, 5rem); /* Responsive sizing */
+    font-size: clamp(3rem, 8vw, 5rem);
     font-weight: 800;
     letter-spacing: -2px;
     margin-bottom: 20px;
     color: #FFFFFF;
+    width: 100%; 
 }
 
 .hero p {
-    color: #C0C0C0; /* Silver */
+    color: #C0C0C0;
     font-size: 1.2rem;
     max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 /* The "Silver" Button */
 .btn {
     display: inline-block;
@@ -193,4 +197,8 @@ footer {
     margin: 5px;
     padding: 5px 15px;
     cursor: pointer;
+}
+.unit-toggle button:focus {
+    border-color: #FFFFFF;
+    background-color: #333333;
 }
