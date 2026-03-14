@@ -28,7 +28,7 @@
         <div class="hero-content">
             <h1>FORGE YOUR STRENGTH</h1>
             <p>Premium lifting gear designed for the modern athlete.</p>
-            <a href="shop.html" class="btn">View Collection</a>
+            <a href="shop.html" class="btn hero-btn">View Collection</a>
         </div>
     </section>
 
@@ -37,7 +37,7 @@
         <p>Calculate your theoretical max based on your heavy sets.</p>
         
         <div class="unit-toggle">
-            <button id="btnKg" onclick="setUnit('kg')">KG</button>
+            <button id="btnKg" class="active" onclick="setUnit('kg')">KG</button>
             <button id="btnLb" onclick="setUnit('lb')">LB</button>
         </div>
 
@@ -50,6 +50,19 @@
         
         <div id="calcResult" class="result-display">
             ESTIMATED 1RM: --
+        </div>
+    </section>
+
+    <section id="shop" class="products">
+        <h2>Featured Gear</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="loxos straps.PNG" alt="LOXOS Straps" class="product-image">
+                <h3>Figure-8 Straps</h3>
+                <p>Maximum grip for your heaviest pulls.</p>
+                <p class="price">P350.00</p>
+                <a href="shop.html" class="btn">View Shop</a>
+            </div>
         </div>
     </section>
 
