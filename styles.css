@@ -188,4 +188,42 @@ footer p {
     color: #444;
     letter-spacing: 1px;
 }
+/*view button fix*/
+.hero .btn {
+    width: auto;           
+    min-width: 250px;      
+    margin-top: 0;        
+    padding: 16px 40px;    
+}
+/*Calulator fix*/
+.calc-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+.calc-container h2 {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* This fixes the input boxes so they stay centered and neat */
+.calc-input-group {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left; /* Keeps labels aligned to the left of the input */
+}
+
+.calc-container input {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+}
