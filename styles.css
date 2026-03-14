@@ -326,7 +326,7 @@ footer p {
 .products {
     /* Replace 'shop-bg.jpg' with your actual filename */
     background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), 
-                url('shopbackground.PNG'); 
+                url('shopbackground.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This creates a cool parallax scrolling effect */
