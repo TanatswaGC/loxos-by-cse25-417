@@ -323,3 +323,13 @@ footer p {
     display: block;
     margin-top: 10px;
 }
+.products {
+    /* Replace 'shop-bg.jpg' with your actual filename */
+    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), 
+                url('shopbackground.PNG'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This creates a cool parallax scrolling effect */
+    min-height: 100vh;
+    padding: 100px 8%;
+}
