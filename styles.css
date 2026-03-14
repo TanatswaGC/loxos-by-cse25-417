@@ -196,34 +196,130 @@ footer p {
     padding: 16px 40px;    
 }
 /*Calulator fix*/
+/* --- High-End Calculator Styling --- */
 .calc-container {
     max-width: 500px;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 100px auto;
+    background: linear-gradient(145deg, #111111, #050505); /* Subtle gradient for depth */
+    padding: 60px 40px;
+    border-radius: 0px; /* Sharp corners feel more industrial/aggressive */
+    border: 2px solid #222;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+}
+
+/* Accent line at the top */
+.calc-container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 60px;
+    height: 2px;
+    background: #C0C0C0; /* Silver accent corner */
 }
 
 .calc-container h2 {
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.calc-container p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Modern Toggle Design */
+.unit-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 0;
+}
+
+.unit-toggle button {
+    background: #000;
+    border: 1px solid #333;
+    color: #555;
+    padding: 12px 30px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.unit-toggle button#btnKg { border-radius: 5px 0 0 5px; }
+.unit-toggle button#btnLb { border-radius: 0 5px 5px 0; }
+
+.unit-toggle button.active {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Sleek Input Fields */
+.input-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #333; /* Underline style instead of boxes */
+    color: #fff;
+    padding: 15px 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #C0C0C0; /* Silver glow on focus */
+}
+
+/* The "Power" Button */
+.calc-main-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.calc-main-btn:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* The Result Area */
+.result-display {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #222;
+    font-size: 1.2rem;
+    color: #C0C0C0;
+    font-weight: 300;
     letter-spacing: 2px;
 }
 
-/* This fixes the input boxes so they stay centered and neat */
-.calc-input-group {
-    width: 100%;
-    margin-bottom: 15px;
-    text-align: left; /* Keeps labels aligned to the left of the input */
-}
-
-.calc-container input {
-    width: 100%;
-    padding: 12px;
-    background: #000;
-    border: 1px solid #333;
+#calcResult strong {
     color: #fff;
-    border-radius: 5px;
-    margin-top: 5px;
+    font-size: 2rem;
+    display: block;
+    margin-top: 10px;
 }
