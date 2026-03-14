@@ -218,3 +218,15 @@ footer {
         transform: translateY(0);    /* Ends at its natural position */
     }
 }
+.product-image {
+    width: 100%;
+    height: 250px;       /* Keeps all product images the same height */
+    object-fit: cover;   /* Crops the image perfectly to fill the space without stretching */
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05); /* The image zooms slightly when you hover the card */
+}
